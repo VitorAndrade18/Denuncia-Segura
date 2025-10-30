@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: #000000;
+    text-align: center;
+}
+
+.left-loginimg {
+    width: 60vw;
+    max-width: 500px;
+    height: auto;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: hwb(208 30% 0%);
+    border-radius: 30px;
+    margin-right: 30px;
+    box-shadow: 0px 10px 40px #00000030;
+}
+
+.card-login > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.textfield > label {
+    color: #f8f6f6de;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ecebec;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.textfield > input::placeholder {
+    color: #000000;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #ccc;
+}
+
+.denuncias a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-loginimg {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .card-login {
+        width: 90%;
+        margin: 0;
+    }
+}
